@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T20:02:51-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jeremys Blog &amp;amp; Tech Reviews</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Why now is the best time to enable HTTPS</title><link href="http://localhost:4000/2015/12/22/best-time-to-enable-https.html" rel="alternate" type="text/html" title="Why now is the best time to enable HTTPS" /><published>2015-12-22T13:05:21-08:00</published><updated>2015-12-22T13:05:21-08:00</updated><id>http://localhost:4000/2015/12/22/best-time-to-enable-https</id><content type="html" xml:base="http://localhost:4000/2015/12/22/best-time-to-enable-https.html">&lt;p&gt;&lt;img src=&quot;/assets/letsencrypt-logo-horizontal.svg&quot; alt=&quot;Lets Encrypt Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So a few days ago, a site has opened its doors to the public to test it’s beta software. Backed by many well known companies including EFF, the non-profit site seeks to help get everyone to enable https on their site. Something that should have happened a long time ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://letsencrypt.org/&quot;&gt;LetsEncrypt.org&lt;/a&gt; is that awesome website.&lt;/p&gt;
+
+&lt;p&gt;Why is it such a big deal that a site is trying to get everyone who hosts a website to enable https? Privacy.&lt;/p&gt;
+
+&lt;p&gt;In light of Snowden breaking the lid open on mass collection of information, people are worried about NSA and other government agencies are tracking our habits for no reason other than to keep records; even law abiding citizens without any ties to any radical groups.&lt;/p&gt;
+
+&lt;p&gt;So to protect the privacy of everyone, Let’s Encrypt created software to generate ssl certs for your site to use. While this has already been done, they took it a step forward and made the process automated, which all others have failed to achieve. This means that once properly setup, your site will always be encrypted with a valid SSL cert.&lt;/p&gt;
+
+&lt;p&gt;Currently, since it’s in open beta, there are lots of questions and issues including limited support by Hosting providers to just a hand full of companies. I currently have an active list: &lt;a href=&quot;https://community.letsencrypt.org/t/web-hosting-who-support-lets-encrypt/&quot;&gt;Web Hosting Supporting Let’s Encrypt List&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I have a SSL cert from them and it was relatively easy to setup on my Mac using this tutorial. There are plenty of tutorials on how to set it up, but I would suggest to wait for the full release if you aren’t comfortable running commands in terminal and uploading the generated certs to your hosting.&lt;/p&gt;
+
+&lt;p&gt;A cPanel plugin is in the works and if you wanted to help speed up the process of getting this plugin out, please vote it up: &lt;a href=&quot;https://features.cpanel.net/topic/provide-support-for-lets-encrypt-automated-certificate-management-ssl&quot;&gt;cPanel Let’s Encrypt Plugin&lt;/a&gt;&lt;/p&gt;</content><author><name>true</name></author><category term="encryption" /><category term="lets-encrypt" /><category term="ssl" /><category term="https" /><summary type="html"></summary></entry></feed>
