@@ -1,25 +1,30 @@
-<!-- 首页及其他页面的布局-Layout -->
+<!-- Home and other page layouts-Layout -->
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- 引入head标签 -->
-<meta charset="UTF-8">
+    <!-- Introducing the head tag -->
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="your web description" />
 <meta name="keywords" content="blog, stopspazzing, technology reviews" />
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/style.min.css">
+<link rel="stylesheet" href="/assets/css/media.min.css">
 <link rel="stylesheet" href="/assets/css/animate.min.css">
-<link rel="stylesheet" href="/assets/css/pygments/pygments_murphy.css">
-<link rel="stylesheet" href="/assets/css/github-markdown.css">
-<!-- SNS-icon -->
-<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<link rel="stylesheet" href="/assets/css/pygments/pygments_murphy.min.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.min.css">
+
+
+
+
 <!-- share.css -->
-<link rel="stylesheet" href="/assets/css/share.min.css">
+<link rel="stylesheet" href="/assets/css/share.min.css"> 
+
+
 <!-- font -->
-<link rel="stylesheet" href="/assets/css/font.css">
-<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+<!--<link rel="stylesheet" href="/assets/css/font.css">-->
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet">
 
 <!-- Favicon -->
 <link href="/assets/profile.png" rel="shortcut icon" />
@@ -27,23 +32,14 @@
 <!-- Android Lolipop Theme Color -->
 <!-- <meta name="theme-color" content="#1464FB"> -->
 <title>Tags</title>
-<!-- 百度统计 -->
 
-<!-- 谷歌分析 -->
-
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PG6DNH4');</script>
 
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6DNH4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- 页面主体 -->
-<header id="index-header">
+    
+    <!-- Page body -->
+    <header id="index-header">
   <div class="top-center">
       <div class="logo">
           <a href="/" title="my awesome webtitle">Jeremys Blog & Technology Reviews</a>
@@ -157,26 +153,27 @@
 
 
 
-<!-- 引用wow.js的动画效果 -->
-<script src="/assets/js/wow.js"></script>
-<script>
-    var wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        // offset: 5,
-        mobile: true,
-        live: true
-    });
-    wow.init();
-</script>
-<!-- 页面刷新回到顶部 -->
-<script>
-    window.onbeforeunload = function(){
-        //刷新后页面自动回到顶部
-        document.documentElement.scrollTop = 0;  //ie下
-        document.body.scrollTop = 0;  //非ie
-    }
-</script>
+    <!-- Animating the effects of wow.js -->
+    <script src="/assets/js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            // offset: 5,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+    <!-- Page refreshback to top -->
+    <script>
+        window.onbeforeunload = function() {
+            //The page automatically returns to the top after refreshing
+            document.documentElement.scrollTop = 0; //ie below
+            document.body.scrollTop = 0; //Non-ie
+        }
+    </script>
 
 </body>
+
 </html>
