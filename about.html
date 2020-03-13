@@ -34,6 +34,12 @@
 <title>About</title>
 
 
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+<link rel="stylesheet" href="/assets/css/github-activity.min.css">
+
+
 </head>
 
 <body>
@@ -127,6 +133,11 @@
           
       
       </li>
+      
+        <li class="fadeInUp animated">
+          <div id="feed"></div>
+        </li>
+      
     </ul>
 </main>
 <footer id="bottom">
@@ -140,6 +151,18 @@
   2020
   <br>
 </footer>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script src="/assets/js/github-activity.min.js"></script>
+  <script>
+    GitHubActivity.feed({
+        username: "stopspazzing",
+        repository: "", // optional
+        selector: "#feed",
+        limit: 20 // optional
+    });
+</script>
 
 
 

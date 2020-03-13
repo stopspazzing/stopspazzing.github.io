@@ -77,3 +77,5 @@ assets/css/pygments/pygments_friendly.min.css
 assets/css/pygments/pygments_emacs.min.css
 assets/css/pygments/pygments_default.min.css
 assets/css/pygments/pygments_autumn.min.css
+assets/css/github-activity.css
+assets/js/github-activity.js
