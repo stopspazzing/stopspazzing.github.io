@@ -3238,6 +3238,7 @@ function ajaxFactory(method) {
     if (method !== 'GET' && method !== 'DELETE') {
       body = JSON.stringify(data);
       req.setRequestHeader('Content-Type', 'application/json');
+      req.setRequestHeader('Origin', 'https://stopspazzing.com');
     }
 
     req.send(body);
