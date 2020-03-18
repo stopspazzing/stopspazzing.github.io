@@ -3231,14 +3231,13 @@ function ajaxFactory(method) {
     });
     req.open(method, url, true);
 
-    req.setRequestHeader('Accept', 'application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json');
+    req.setRequestHeader('Accept', 'application/json, application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json');
     if (token) {
       req.setRequestHeader('Authorization', 'token ' + token);
     }
     if (method !== 'GET' && method !== 'DELETE') {
       body = JSON.stringify(data);
       req.setRequestHeader('Content-Type', 'application/json');
-      req.setRequestHeader('Origin', 'https://stopspazzing.com');
     }
 
     req.send(body);
@@ -3414,7 +3413,7 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://github.com/login/oauth/access_token', {
+      _utils.http.post('https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
