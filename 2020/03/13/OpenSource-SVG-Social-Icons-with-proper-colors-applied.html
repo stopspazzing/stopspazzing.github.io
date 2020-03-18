@@ -242,6 +242,25 @@
 
 
 
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="/assets/css/gitment-default.css">
+<script src="/assets/js/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2020/03/13/OpenSource-SVG-Social-Icons-with-proper-colors-applied', //  location.href
+  owner: 'StopSpazzing',
+  repo: 'stopspazzing.github.io',
+  oauth: {
+    client_id: 'e3780e36089b9abe33bf',
+    client_secret: '46a87ed4da0617062f776c31dec125459c20be6e',
+  },
+})
+gitment.render('container')
+</script>
+
 
   <!-- Introducing the goto module -->
   <div class="bounceInRight animated go">
@@ -250,7 +269,7 @@
             Top
         </div>
     </a>
-    <a class="gotobottom" href="#htmldown" target="_self" title="Goto Comments">
+    <a class="gotobottom" href="#htmldown" target="_self" title="GotoGitment Comments">
         <div class="box" style="font-family:'ffad_matroregular';">
             Foot
         </div>
