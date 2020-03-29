@@ -228,24 +228,20 @@
 
 
 
-<section class="post-footer-item comment">
-  <div id="container"></div>
-</section>
 
-<link rel="stylesheet" href="/assets/css/gitment-default.css">
-<script src="/assets/js/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '/2015/12/22/Best-time-to-enable-https', //  location.href
-  owner: 'StopSpazzing',
-  repo: 'stopspazzing.github.io',
-  oauth: {
-    client_id: 'e3780e36089b9abe33bf',
-    client_secret: '46a87ed4da0617062f776c31dec125459c20be6e',
-  },
-})
-gitment.render('container')
-</script>
+
+<section class="post-footer-item comment">
+  <div id="container">
+    <script src="https://utteranc.es/client.js"
+    repo="stopspazzing/stopspazzing.github.io"
+    issue-term="pathname"
+    label="💬"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+  </div>
+</section>
 
 
   <!-- Introducing the goto module -->
@@ -255,7 +251,7 @@ gitment.render('container')
             Top
         </div>
     </a>
-    <a class="gotobottom" href="#htmldown" target="_self" title="GotoGitment Comments">
+    <a class="gotobottom" href="#htmldown" target="_self" title="Goto Comments">
         <div class="box" style="font-family:'ffad_matroregular';">
             Foot
         </div>
