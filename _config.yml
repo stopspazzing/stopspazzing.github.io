@@ -1,0 +1,109 @@
+environment: production
+# Site settings
+title: 'Jeremys Blog and Tech Reviews'
+description: 'your web description'
+keywords: 'blog, stopspazzing, technology reviews'
+url: 'https://stopspazzing.com' # your host
+plugins:
+  - jekyll-minifier
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+jekyll-minifier:
+  compress_javascript: true
+  exclude:
+  uglifier_args:
+    harmony: true
+
+# nav
+nav: 
+  Home: '/'
+  Tags: '/tags.html'
+  Timeline: '/timeline.html'
+  About: '/about.html'
+  Reviews: '/reviews.html'
+
+# Author
+author: true
+name: 'Jeremy Zimmerman'
+NickName: 'StopSpazzing'
+webtitle: 'Jeremys Blog & Technology Reviews'
+bio: 'A tech geek, programmer, and open-source aficionado'
+about: true
+aboutyou: 'Working as a System Administrator in sunny Southern California, this blog is where I discuss ideas around technology, opensource, and software reviews that deserve more discussion than can be conveyed with 140 characters. Sometimes, I throw in a code snippet here and there for others to benefit from which cant be found elsewhere online.'
+portraits: '/assets/profile.png' # your portraits image file path
+
+# SNS
+SNS: false
+SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
+  mail: ''
+  weixin: ''
+  qq: ''
+  github: 'https://github.com/stopspazzing'
+  Codepen: ''
+  weibo: ''
+  instagram: ''
+  Twitter: 'https://twitter.com/stopspazzing'
+  Dribbble: ''
+  Facebook: ''
+  Google: ''
+  zhihu: ''
+  juejin: ''
+  twitch: ''
+
+# 分页
+paginate: 2
+paginatepath: ['page:num']
+
+# since
+footer:
+  since: 2011
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+# rouge
+highlighter: rouge
+# pygments: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango
+pygmentsTheme: 'murphy'
+
+#
+friends:
+#  jekyll: 'https://www.jekyll.com.cn/'
+
+# disqus、livere, Gitment
+# disqus 
+disqus: false
+disqus_url: '' # https://abc.disqus.com/embed.js
+#
+livere: false
+livere_uid: ''
+# Gitment OAuth Application
+Gitment: false
+Gitment_owner: 'StopSpazzing'  # github
+Gitment_repo: 'stopspazzing.github.io'  # github
+client_id: ''  #  OAuth Application  client_id
+client_secret: ''  #  OAuth Application  client_secret
+
+# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
+social-share: false
+social-share-items: ['twitter', 'facebook', 'google']
+
+# baidu-url
+baidu: false
+baidu-url: ''
+# google-ID
+google: false
+google-ID: 'GTM-PG6DNH4'
+
+# Alternative color for blog header information (this section does not act as a site variable in the site, it is written in the post header information as a page variable)
+color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
+
+# github-activity plugin
+github-activity: true
+github-username: 'stopspazzing'
+github-repo:
+
+#utterances
+utterances: true

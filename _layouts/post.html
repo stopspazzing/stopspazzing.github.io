@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+{% include androidColor.html %}
+</head>
+
+<body>
+  {% if site.google %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google-ID }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
+
+  <div class="main-container">
+  <!-- Top anchor -->
+  <a id="htmlup" name="htmlup"></a>
+  <!-- Introducing blog top options -->
+  {% include post-header.html %}
+  <!-- Introducing mobile drop-down options -->
+  {% include boot.html %}
+  <!-- Introducing blog top styles -->
+  {% include post-title.html %}
+  <div class="markdown-body fadeInUp animated">
+
+    {% if page.subtitle %}
+      {% if page.color.size==0 or page.color==nil %}
+        <div class="postpage-subtitle" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+          {{ page.subtitle }}
+        </div>
+      {% else %}
+        <div class="postpage-subtitle" style="border-left: 8px solid {{ page.color }}; border-right: 8px solid {{ page.color }}">
+          {{ page.subtitle }}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <!-- Article content -->
+    {{ page.content }}
+    <!-- Introducing the share module -->
+    {% include share.html %}
+  </div>
+
+  <!-- Bottom anchor -->
+  <a id="htmldown" name="htmldown"></a>
+  <!-- Introducing the comment module -->
+  {% include comment.html %}
+  <!-- Introducing the goto module -->
+  {% include goto.html %}
+  <!-- Introducing the module at the bottom of the page -->
+  {% include footer.html %}
+
+  </div> <!-- closing main-container-->
+
+  <!-- Animating the effects of wow.js -->
+  <script src="/assets/js/wow.min.js"></script>
+  <script>
+      var wow = new WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          // offset: 600,
+          mobile: true,
+          live: true
+      });
+      wow.init();
+  </script>
+  <!-- Page refreshback to top -->
+  <script>
+      window.onbeforeunload = function(){
+          //The page automatically returns to the top after refreshing
+          document.documentElement.scrollTop = 0;  //ie below
+          document.body.scrollTop = 0;  //Non-ie
+      }
+  </script>
+  <script src="/assets/js/main.min.js"></script>
+</body>
+</html>

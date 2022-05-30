@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+
+<body>
+    {% if site.google %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google-ID }}" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+   
+    <div class="main-container">
+    <!-- Page body -->
+    {{ content }}
+    </div> 
+    <!-- closing main-container-->
+    
+    <!-- Animating the effects of wow.js -->
+    <script src="/assets/js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            // offset: 5,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+    <!-- Page refreshback to top -->
+    <script>
+        window.onbeforeunload = function() {
+            //The page automatically returns to the top after refreshing
+            document.documentElement.scrollTop = 0; //ie below
+            document.body.scrollTop = 0; //Non-ie
+        }
+    </script>
+    {%if site.github-activity %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="/assets/js/github-activity.min.js"></script>
+    <script>
+      var element = document.getElementById("feed");
+      if(typeof(element) != 'undefined' && element != null){
+        GitHubActivity.feed({
+          username: "{{ site.github-username }}",
+          repository: "{{ site.github-repo }}", // optional
+          selector: "#feed",
+          limit: 10 // optional
+        });
+      };
+    </script>
+    {% endif %}
+</body>
+
+</html>
