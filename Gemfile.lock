@@ -214,7 +214,7 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.11.0.rc1-x64-mingw32)
       mini_portile2 (~> 2.4.0)
-    octokit (4.17.0)
+    octokit (4.23.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
@@ -264,4 +264,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.1.2
+   2.3.5
